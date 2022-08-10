@@ -1,0 +1,450 @@
+body {
+  background-color: #012a4a;
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Courgette', cursive;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 3.75rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.125rem;
+}
+
+p,a {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+}
+
+.content {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.mano__izquierda {
+  position: absolute;
+  left: -5.9375rem;
+  top: 15%;
+}
+
+.mano__derecha {
+  position: absolute;
+  right: -5.9375rem;
+  top: 55%;
+}
+
+.headerImg {
+  margin-left: 41%;
+  width: 18%;
+  max-width: 100%;
+  transition: all .5s ease-in-out;
+}
+
+.headerImg:hover {
+  transform: scale(.9, 1);
+}
+
+nav {
+  margin-top: 3.75rem;
+}
+
+nav ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  background-color: #2a6f97;
+  border-radius: 0.8125rem;
+  border: 0.125rem solid white;
+  box-shadow: 0 0.125rem 0 0.125rem #000;
+  color: white;
+  padding: 0.625rem 1.25rem;
+  text-decoration: none;
+  transition: all .7s;
+}
+
+nav a:hover {
+  background-color: #ffca7a;
+  color: #000;
+  font-weight: bold;
+}
+
+/*------Footer-------*/
+
+footer {
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3.125rem; 
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+footer li {
+  margin-left: 0.625rem;
+}
+
+.ir__arriba {
+  position: fixed;
+  bottom: 1.25rem;
+  right: -0.625rem;
+  transition: all .60s ease-in-out;
+}
+
+.ir__arriba:hover {
+  transform: rotate(.1turn);
+}
+
+/*------Index-------*/
+
+.contentInfo {
+  display: flex;
+  color: white;
+}
+
+
+.exclamation {  
+  margin-left: -5.9375rem ;
+  margin-top: 1.875rem ;
+  max-width: 100%;
+  transform: scale(.8);
+}
+
+.presentation {
+  margin-top: 4.375rem ;
+}
+
+.contentEyes {
+  bottom: -22.8125rem;
+  left: 45.625rem;
+  max-width: 100%;
+  position: absolute;
+  width: 28.125rem;
+  z-index: 2;
+}
+
+.contentProjects {
+  background-color: #ffca7a ;
+  border-radius:3.125rem;
+  border: 0.25rem solid black;
+  margin-top: 15.625rem;
+  padding-bottom:3.75rem ;
+  padding-top: 3.125rem;
+  text-align: center;
+  position: relative;
+} 
+
+.contentProjects h3 {
+  margin-bottom: 0;
+}
+
+.contentProjects__Box {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contentProjects__Box article {
+  width: 25%;
+}
+
+.contentProjects__Box img {
+  margin-bottom: 1.875rem;
+  max-width: 100%;
+}
+
+.contentProjects a {
+  background-color: #2a6f97;
+  border-radius: 0.8125rem;
+  border: 0.125rem solid white;
+  box-shadow: 0 0.125rem 0 0.125rem #000;
+  color: white;
+  padding: 0.625rem 1.25rem ;
+  text-decoration: none;
+  transition: all .7s;
+}
+
+.contentProjects a:hover {
+  background-color: #012a4a;
+  font-weight: bold;
+}
+
+/*------Curriculum-------*/
+
+.contentCV {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3.125rem;
+}
+
+.contentCV__box1 {
+  background-color: white;
+  border: 0.1875rem solid black; 
+  padding: 3.9375rem 3.125rem;   
+}
+
+.contentCV__box1 h1 {
+  text-align: center;
+}
+
+.contentCV__box1 h3 {
+  margin-bottom: 0rem;
+}
+
+.contentCV__box1 a {
+  background-color: #2a6f97;
+  border-radius: 0.8125rem;
+  border: 0.125rem solid white;
+  box-shadow: 0 0.125rem 0 0.125rem #000;
+  color: white;
+  padding: 0.625rem 1.25rem;
+  text-decoration: none;
+}
+
+.contentCV__box1 a:hover {
+  background-color: #ffca7a;
+  color: #000;
+  font-weight: bold;
+  transition: all .7s;
+}
+
+.contentlink {
+  padding-bottom: 1.5625rem;
+}
+
+.imgCV {
+  margin-left: 28%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.contentCV__box2 {
+  background-color: #2a6f97;
+  border: 0.1875rem solid black; 
+  padding: 2.625rem 3.125rem;
+}
+
+.contentCV__box2 h4 {
+  background-color: white;
+  border-radius: 0.8125rem;
+  border: 0.1875rem solid black;
+  padding: 0.625rem 1.25rem;
+  width: 70%;
+}
+
+.contentCV__box2 p {
+  color: white;
+  width: 70%;
+}
+
+/*------Portafolio-------*/ 
+
+.contentPortafolio h1 {
+  color: white;
+  text-align: center;
+}
+
+.boxInfo {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 6.25rem;
+  padding-top: 6.25rem;
+}
+
+.box {
+  display: inline-block;
+  position: relative;
+  width: 31.25rem;
+  height: 31.25rem;
+  border-radius: 1.875rem;
+  overflow: hidden;
+  box-shadow: 0.3125rem 0.3125rem 1.875rem rgba(0, 0, 0, 0.3);
+  margin: 1.875rem;
+}
+
+.box-profile-img {
+  filter: blur(0.3125rem);
+  height: 100%;
+  transition: all .3s ease-in-out;
+}
+
+.box-profile-img:hover {
+  filter: none;
+}
+
+.box-description-bk {
+  background-color: black;
+  border-radius: 1.875rem;
+  height: 40%;
+  left: -0.3125rem;
+  opacity: 0.80;
+  position: absolute;
+  top: 65%;
+  transform: skew(17deg, -7deg);
+  width: 108%;
+}
+
+.box-description {
+  bottom: 4%;
+  color: #fff;
+  font-size: 3.75rem;
+  font-weight: 900;
+  left: 4.6875rem;
+  position: absolute;
+}
+
+.box-description h2{
+  margin: 0rem;
+}
+
+.box-btn a {
+  background-color: #2a6f97;
+  border-radius: 0.8125rem;
+  border: 0.125rem solid white;
+  bottom: 10%;
+  box-shadow: 0 0.125rem 0 0.125rem #000;
+  color: #fff;
+  padding: 0.625rem 1.25rem;
+  position: absolute;
+  right: 1.875rem;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+.box-btn a:hover {
+  background-color: #012a4a;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+.boxInfo p {
+  background-color: #003859;
+  border-radius: 0.9375rem;
+  border: 0.125rem solid black;
+  color: white;
+  padding: 9.375rem;
+  width: 50%;
+}
+
+.boxInfo2 {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.boxInfo2 p {
+  background-color: #003859;
+  border-radius: 0.9375rem;
+  border: 0.125rem solid black;
+  color: white;
+  padding: 9.375rem;
+  width: 50%;
+}
+
+/*------Contacto-------*/
+
+address {
+  color: white;
+  padding-bottom: 3.125rem;
+  text-align: center;
+}
+
+address p{
+  font-size: 1.5rem;
+}
+
+address span {
+  font-weight: bold;
+}
+
+.contactP {
+  color: white;
+  display: flex;
+  font-family: 'Nunito', sans-serif;
+  justify-content:center;
+  padding-bottom: 4.375rem;
+}
+
+.contactBox h2{
+  color: white;
+  text-align: center;
+}
+
+form div {
+  margin-bottom: 1.875rem;
+}
+
+form label {
+  text-align: left;
+}
+
+form input {
+  border-radius: 3.125rem;
+  border: 0.125rem solid black;
+  padding: 0.3125rem 0rem;
+  width: 100%;
+}
+
+form select {
+  border-radius: 3.125rem;
+  border: 0.125rem solid black;
+  padding: 0.3125rem 0rem;
+  width: 100%;
+}
+
+form option {
+  text-align: left;
+}
+
+.formText__Area textarea{
+  border-radius: 0.9375rem;
+  border: 0.125rem solid black;
+}
+
+.submit {
+  text-align: center;
+  width: 100%;
+}
+
+form button {
+  background-color: #2a6f97;
+  border-radius: 0.8125rem;
+  border: 0.125rem solid white;
+  box-shadow: 0 0.125rem 0 0.125rem #000;
+  color: white;
+  padding: 0.625rem 1.25rem;
+  text-decoration: none;
+}
+
+form button:hover {
+  background-color: #ffca7a;
+  color: #000;
+  font-weight: bold;
+}

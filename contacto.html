@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nunito:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Adrian Contacto</title>
+</head>
+
+<body>
+  <a href="#ancla"><img class="ir__arriba" src="img/Mano-a.png" alt="Volver al inicio"></a>
+  <header id="ancla" class="header content">
+    <a href="index.html"><img class="headerImg" src="img/Comp 1.gif" alt="Logo Adrián"></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="curriculum.html">Curriculum</a></li>
+        <li><a href="Portafolio.html">Portafolio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <address>
+      <h1>Información de contacto</h1>
+      <p><span>Correo:</span> az1767824@gmail.com</p>
+      <p><span>Teléfono:</span> (+506) 8523 5073</p>
+    </address>
+    
+    <section class="content contactP">
+      <div class="contactBox">
+        <h2>Contáctame</h2>
+        <form class="contactForm">
+          <div>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+          </div>
+          <div>
+            <label for="correo">Correo:</label><br>
+            <input type="email" id="correo" name="correo" required>
+          </div>
+          <div>
+            <label for="select">Motivo de contacto</label><br>
+            <select name="select">
+              <option value="value1" selected>none</option>
+              <option value="value2">Contrato</option>
+              <option value="value3" >Cotización</option>
+              <option value="value4">Soporte al cliente</option>
+            </select>
+          </div>
+          <div class="formText__Area">
+            <label for="message">Mensaje</label><br>
+            <textarea id="message" name="message" rows="10" cols="61" placeholder=" Escribe tu mesaje aquí" required></textarea>
+          </div>
+          <button class="submit" type="submit" value="Submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="content">
+    <p>© 2022 Copyright. Todos los derechos reservados.</p>
+    <div>
+      <ul>
+        <li><a href="https://www.facebook.com/adrianfrancisco.zunigaperez/"><img src="img/facebook.png"Ir al perfil de facebook de Adrian"></a></li>
+        <li><a href="https://www.instagram.com/adriian_z1/"><img src="img/instagram.png" alt="Ir al perfil de Instagram de Adrián"></a></li>
+        <li><a href="https://github.com/4Driian"><img src="img/git.png" alt="Ir al perfil de github de Adrián"></a></li>
+        <li><a href="https://www.linkedin.com/in/adrian-perez-103b84225"><img src="img/linkedin.png" alt="Ir al perfil de linkedin de Adrián"></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
