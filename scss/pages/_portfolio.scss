@@ -1,0 +1,104 @@
+
+.contentPortafolio h1 {
+  color: white;
+  text-align: center;
+}
+
+.boxInfo {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 6.25rem;
+  padding-top: 6.25rem;
+}
+
+.box {
+  display: inline-block;
+  position: relative;
+  width: 31.25rem;
+  height: 31.25rem;
+  border-radius: 1.875rem;
+  overflow: hidden;
+  box-shadow: 0.3125rem 0.3125rem 1.875rem rgba(0, 0, 0, 0.3);
+  margin: 1.875rem;
+}
+
+.box-profile-img {
+  filter: blur(0.3125rem);
+  height: 100%;
+  transition: all .3s ease-in-out;
+}
+
+.box-profile-img:hover {
+  filter: none;
+}
+
+.box-description-bk {
+  background-color: black;
+  border-radius: 1.875rem;
+  height: 40%;
+  left: -0.3125rem;
+  opacity: 0.80;
+  position: absolute;
+  top: 65%;
+  transform: skew(17deg, -7deg);
+  width: 108%;
+}
+
+.box-description {
+  bottom: 4%;
+  color: #fff;
+  font-size: 3.75rem;
+  font-weight: 900;
+  left: 4.6875rem;
+  position: absolute;
+}
+
+.box-description h2{
+  margin: 0rem;
+}
+
+.box-btn a {
+  background-color: #2a6f97;
+  border-radius: 0.8125rem;
+  border: 0.125rem solid white;
+  bottom: 10%;
+  box-shadow: 0 0.125rem 0 0.125rem #000;
+  color: #fff;
+  padding: 0.625rem 1.25rem;
+  position: absolute;
+  right: 1.875rem;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+}
+
+.box-btn a:hover {
+  background-color: #012a4a;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+.boxInfo p {
+  background-color: #003859;
+  border-radius: 0.9375rem;
+  border: 0.125rem solid black;
+  color: white;
+  padding: 9.375rem;
+  width: 50%;
+}
+
+.boxInfo2 {
+  align-items: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.boxInfo2 p {
+  background-color: #003859;
+  border-radius: 0.9375rem;
+  border: 0.125rem solid black;
+  color: white;
+  padding: 9.375rem;
+  width: 50%;
+}

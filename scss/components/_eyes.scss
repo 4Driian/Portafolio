@@ -1,0 +1,58 @@
+.pupile {
+  background-color: #000;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+}
+
+.eye {
+  background-color: #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: grid;
+  filter: drop-shadow(3px 3px 5px #0a0a0a2d );
+  height: 350px;
+  margin-top: 100px;
+  overflow: hidden;
+  place-items: center;
+  width: 350px;
+  animation: blink;
+}
+
+.eye:active {
+  animation: veins 2s;
+}
+
+.eyes-wrapper {
+  column-gap: 10px;
+  display: flex;
+}
+
+@keyframes blink {
+  0% {
+    transform: scale(1.2);
+  }
+  10% {
+    transform: scale(1.4);
+
+  }
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1.6);
+  }
+}
+
+@keyframes veins {
+  0% {
+    background-image: url('../../src/svg/veins.svg');
+  }
+  50% {
+    background-image: url('../../src/svg/veins.svg');
+  }
+  100% {
+    background-image: url('../../src/svg/veins.svg');
+  }
+}

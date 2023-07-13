@@ -1,68 +1,105 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nunito:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Adrian</title>
   </head>
+
   <body>
-    <a href="#ancla"><img class="ir__arriba" src="img/Mano-a.png" alt="Volver al inicio"></a>
+    <div id="top-page" class=" top-page logo-container">
+      <img class="logo-principal" src="src/svg/logo-adrian-animated.svg" alt="Logo 'Adrian' animated"><!--Logo created in svg format with animations-->
+    </div>
+    <a href="#top-page"><img class="hand-up" src="src/img/Mano-a.png" alt="Volver al inicio"></a>
     <header id="ancla" class="header content">
-      <a href="index.html"><img class="headerImg" src="img/Comp 1.gif" alt="Logo Adrián"></a>
-      <nav>
+      <!--Navigation-->
+      <nav class="nav-principal">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="curriculum.html">Curriculum</a></li>
-          <li><a href="Portafolio.html">Portafolio</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="index.html" class="nav-link link-eyes">Home</a></li>
+          <li><a href="./Portafolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="./contacto.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </header>
-    <main class="content">
-      <div class="contentInfo">
-        <img class="exclamation" src="img/!.gif" alt="">
-        <div class="presentation">
-          <h1>Hola! Soy Adrian!</h1>
-          <h2>Soy Diseñador y Desarrollador Web.</h2>
-          <p>Como desarrollador, me gusta ponerme nuevos retos cada día y poder superarlos de manera satisfactoria!</p>
+
+    <main class="main-content">
+      <div class="presentation content">
+        <!--Eyes tracker container-->
+        <div class="eyes-container">
+          <div class="eyes-wrapper">
+            <div id="eye-left" class="eye">
+              <div class="pupile"></div>
+            </div>
+            <div id="eye-right" class="eye">
+              <div class="pupile"></div>
+            </div>
+          </div>
+        </div>
+        <!--Presentation description-->
+        <div class="content-info">
+          <div class="content-titles">
+            <h1>Hi, I'm Adrián!</h1>
+            <h2>I'm a Web Designer and Developer.</h2>
+            <p>As a developer, I like to set myself new challenges every day and be able to overcome them successfully!</p>
+          </div>
         </div>
       </div>
-      <img class="contentEyes" src="img/Ojos.gif" alt="">
-      <section class="contentProjects">
-        <img class="mano__izquierda" src="img/mano-izq.png" alt="">
-        <img class="mano__derecha" src="img/mano-der.png" alt="">
-        <h3>Estos son algunos de mis proyectos recientes</h3>
-        <div class="contentProjects__Box">
-          <article>
-            <h4>Dalio</h4>
-            <img src="img/Dalio 1.png" alt="Imagen de proyecto de Dalio">
-            <a href="https://4driian.github.io/Dalio/">Ir al sitio</a>
-          </article>
+      <!--Recent Projects -->
+      <section class="box-projects">
+        <div class="content container-projects">
+          <div class="recent-projects-resume">
+            <h2>Here!</h2>
+            <p class="projects-description">These are some of my projects that I have done throughout my career in web development and design! <br> <br> Open the link to see all the projects created, each one of them in a different semester!</p>
+            <a class="nav-link" href="./Portafolio.html">Go to portfolio</a>
+          </div>
+          <div class="recent-projects">
+            <article>
+              <div class="project-item">
+                <a class="projects-link" href="https://4driian.github.io/Dalio/"> <img src="./src/img/Dalio 1.png" alt="Imagen de proyecto de Dalio"><div class="project-overlay"><h3>Dalio Project</h3></div></a>
+              </div>
+            </article>
 
-          <article>
-            <h4>Biccas</h4>
-            <img src="img/Biccas 1.png" alt="Imagen de proyecto de Biccas">
-            <a href="https://4driian.github.io/Biccas/">Ir al sitio</a>
-          </article>
+            <article>
+              <div class="project-item">
+                <a class="projects-link" href="https://4driian.github.io/Biccas/"><img src="./src/img/Biccas 1.png" alt="Imagen de proyecto de Biccas"><div class="project-overlay"><h3>Biccas Project</h3></div></a>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="content">
-      <p>© 2022 Copyright. Todos los derechos reservados.</p>
-      <div>
-        <ul>
-          <li><a href="https://www.facebook.com/adrianfrancisco.zunigaperez/"><img src="img/facebook.png"Ir al perfil de facebook de Adrian"></a></li>
-          <li><a href="https://www.instagram.com/adriian_z1/"><img src="img/instagram.png" alt="Ir al perfil de Instagram de Adrián"></a></li>
-          <li><a href="https://github.com/4Driian"><img src="img/git.png" alt="Ir al perfil de github de Adrián"></a></li>
-          <li><a href="https://www.linkedin.com/in/adrian-perez-103b84225"><img src="img/linkedin.png" alt="Ir al perfil de linkedin de Adrián"></a></li>
-        </ul>
-      </div>
+    <footer class="content footer">
+      <h2>Follow Me!</h2>
+      <p>On my different social media accounts so you don't miss updates on my projects.</p>
+      <section class="social-media">
+        <div class="social-media-links">
+
+          <a href="https://github.com/4Driian">
+            <div class="social-media-overlay">
+              <img class="social-media-logos" src="./src/svg/github-logo.svg" alt="Ir al perfil de GitHub de Adrián" title="Are you not following me yet?">
+              <span class="overlay-text">Follow Me!</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/adrian-perez-103b84225">
+            <div class="social-media-overlay">
+              <img class="social-media-logos" src="./src/svg/linkedin-logo.svg" alt="Ir al perfil de LinkedIn de Adrián" title="Are you not following me yet?">
+              <span class="overlay-text">Follow Me!</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    
+
+      <p class="copyright">© 2022 Copyright. All rights reserved.</p>
+
     </footer>
+  <script type="module" src="src/js/main.js"></script>
   </body>
 </html>

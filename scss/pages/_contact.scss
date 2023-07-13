@@ -1,0 +1,63 @@
+address {
+  color: white;
+  padding-bottom: 3.125rem;
+  text-align: center;
+}
+
+address p{
+  font-size: 1.5rem;
+}
+
+address span {
+  font-weight: bold;
+}
+
+.contactP {
+  color: white;
+  display: flex;
+  font-family: 'Nunito', sans-serif;
+  justify-content:center;
+  padding-bottom: 4.375rem;
+}
+
+.contactBox h2{
+  color: white;
+  text-align: center;
+}
+
+form div {
+  margin-bottom: 1.875rem;
+}
+
+form label {
+  text-align: left;
+}
+
+form input {
+  border-radius: 3.125rem;
+  border: 0.125rem solid black;
+  padding: 0.3125rem 0rem;
+  width: 100%;
+}
+
+form select {
+  border-radius: 3.125rem;
+  border: 0.125rem solid black;
+  padding: 0.3125rem 0rem;
+  width: 100%;
+}
+
+form option {
+  text-align: left;
+}
+
+.formText__Area textarea{
+  border-radius: 0.9375rem;
+  border: 0.125rem solid black;
+}
+
+.submit {
+  text-align: center;
+  width: 100%;
+}
+

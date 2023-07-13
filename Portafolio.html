@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +7,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nunito:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/styles.css">
   <title>Adrian Portafolio</title>
 </head>
 
 <body>
-  <a href="#ancla"><img class="ir__arriba" src="img/Mano-a.png" alt="Volver al inicio"></a>
+  <div id="top-page" class=" top-page logo-container">
+    <img class="logo-principal" src="src/svg/logo-adrian-animated.svg" alt="Logo 'Adrian' animated"><!--Logo created in svg format with animations-->
+  </div>
+  <a href="#top-page"><img class="ir__arriba" src="src/img/Mano-a.png" alt="Volver al inicio"></a>
   <header id="ancla" class="header content">
-    <a href="index.html"><img class="headerImg" src="img/Comp 1.gif" alt="Logo Adrián"></a>
-    <nav>
+    <!--Navigation-->
+    <nav class="nav-principal">
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="curriculum.html">Curriculum</a></li>
-        <li><a href="Portafolio.html">Portafolio</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html" class="nav-link link-eyes">Home</a></li>
+        <li><a href="./Portafolio.html" class="nav-link">Portfolio</a></li>
+        <li><a href="./contacto.html" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>

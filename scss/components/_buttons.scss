@@ -1,0 +1,47 @@
+@import '../utilities/mixins';
+
+/*Form*/
+.button-submit {
+  @include button-blue-template;
+}
+
+.button-submit:hover {
+  transition: all 0.3s;
+  background-color: #fff;
+  color: #000;
+}
+
+/*All Navigation*/
+.nav-link {
+  @include button-blue-template;
+}
+
+.nav-link:hover {
+  transition: all 0.3s;
+  background-color: #fff;
+  color: #000;
+}
+
+.link-eyes::before {
+  background-image: url('../../src/svg/micro-eyes.svg');
+  @include efect-appear-top;
+}
+
+.link-eyes:hover::before {
+  top: -70%;
+  opacity: 1;
+}
+
+.link-eye-right {
+  width: 100px;
+}
+
+.link-eye-right::before {
+  background-image: url('../../src/svg/righ-eye.svg');
+  @include efect-appear-right;
+}
+
+.link-eye-right:hover::before {
+  top: -170%;
+  opacity: 1;
+}
