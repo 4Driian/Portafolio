@@ -1,3 +1,4 @@
+@import '../abstracts/variables';
 .content {
   margin: 0 auto;
   width: 90%;
@@ -5,7 +6,7 @@
 
 .content-info {
   display: flex;
-  color: white;
+  color: $font-color-white;
 }
 
 .content-titles h2 {
@@ -23,10 +24,7 @@
   margin-top: 80px;
 }
 
-.container-projects {
-  display: flex;
-  justify-content: space-around;
-}
+
 
 .box-projects {
   margin-top: 200px;
@@ -35,16 +33,12 @@
   background-color: #fff;  
 }
 
-.recent-projects-resume {
-  width: 30%;
-}
-
 .recent-projects {
   text-align: center;
 }
 
 .social-media {
-  color: #fff;
+  color: $font-color-white;
   padding-top: 20px; 
 }
 
@@ -54,4 +48,136 @@
   flex-wrap: nowrap;
   justify-content: space-evenly;
   padding-bottom: 50px;
+}
+
+@media (max-width: 480px) {
+  .presentation {
+    margin-top: 50px;
+    margin-bottom: -150px;
+  }
+
+  .eyes-container {
+    display: none;
+  }
+
+  .content-titles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-titles h1 {
+    font-size: 30px;
+    margin-top: -60px;
+    margin-bottom: 15px;
+  }
+
+  .content-titles h2 {
+    font-size: 20px;
+    margin-top: -10px;
+  }
+  
+  .content-titles p {
+    margin-top: -10px;
+    font-size: 18px;
+  }
+
+  .recent-projects-resume h2 {
+    font-size: 50px;
+  }
+
+  .recent-projects-resume p {
+    font-size: 22px;
+    width: 302px;
+  }
+
+  .container-projects {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .recent-projects {
+    margin-top: 30px;
+    display: flex;
+  }
+
+  .recent-projects img {
+    margin-top: -60px;
+    padding: 20px;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .presentation {
+    margin-top: 50px;
+    margin-bottom: -150px;
+  }
+
+  .eyes-container {
+    display: none;
+  }
+
+  .content-titles {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-titles h1 {
+    font-size: 45px;
+    margin-top: -60px;
+    margin-bottom: 15px;
+  }
+
+  .content-titles h2 {
+    font-size: 30px;
+    margin-top: -10px;
+  }
+  
+  .content-titles p {
+    margin-top: -10px;
+    font-size: 20px;
+  }
+
+  .recent-projects-resume h2 {
+    font-size: 60px;
+  }
+
+  .recent-projects-resume p {
+    font-size: 25px;
+    width: 420px;
+  }
+
+  .container-projects {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .recent-projects {
+    margin-top: 30px;
+    display: flex;
+  }
+
+  .recent-projects img {
+    margin-top: -60px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .recent-projects-resume {
+    width: 30%;
+  }
+
+  .container-projects {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .presentation {
+    margin-top: 80px;
+  }
 }

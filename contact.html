@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Adrian Contacto</title>
+  </head>
+
+  <body>
+      <!--Navigation Mobile-->
+      <nav>
+        <div class="nav-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul class="menu">
+            <a href="index.html"><li>Home</li></a>
+            <a href="portfolio.html"><li>Contact</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+          </ul>
+        </div>
+      </nav>
+  
+      <div id="top-page" class="top-page logo-container">
+        <img class="logo-principal" src="src/svg/logo-adrian-animated.svg" alt="Logo 'Adrian' animated"><!--Logo created in svg format with animations-->
+      </div>
+      <a href="#top-page"><img class="hand-up" src="src/img/Mano-a.png" alt="Volver al inicio"></a>
+      <header id="ancla" class="header content">
+  
+        <!--Navigation-->
+        <nav class="nav-principal">
+          <ul>
+            <li><a href="index.html" class="nav-link eyes-appear">Home</a></li>
+            <li><a href="./portfolio.html" class="nav-link hand-portfolio">Portfolio</a></li>
+            <li><a href="./contact.html" class="nav-link hand-contact">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+      <section class="content contact-content">
+        <div class="contact-box">
+          <form class="contact-form">
+            <h2>Contact me!</h2>
+            <div class="social-media-overlay">
+              <span class="overlay-text-form">Write your name</span>
+              <input type="text" id="nombre" name="nombre" placeholder="Write your name here!" title="Complete this field." required>
+            </div>
+            <div class="social-media-overlay">
+              <span class="overlay-text-form">Write your email</span>
+              <input type="email" id="correo" name="correo" placeholder="Enter your email address." title="Complete this field." required>
+            </div>
+            <div class="social-media-overlay">
+              <span class="overlay-text-form">Write the reason</span>
+              <input type="text" id="reason" name="reason"  placeholder="Please provide the reason for your contact." title="Complete this field." required>
+            </div>
+            <div class="form-sms">
+              <textarea id="message" name="message" rows="10" cols="61" placeholder="Write your message here" title="Complete this field." required></textarea>
+            </div>
+            <button class="nav-link button-submit-form" type="submit" value="Submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    
+
+
+    <footer class="content footer">
+      <h2>Follow Me!</h2>
+      <p class="social-media-description">On my different social media accounts so you don't miss updates on my projects.</p>
+      <section class="social-media">
+        <div class="social-media-links">
+          <!--Link to github-->
+          <a href="https://github.com/4Driian"> 
+            <div class="social-media-overlay">
+              <img class="social-media-logos" src="./src/svg/github-logo.svg" alt="Ir al perfil de GitHub de Adrián" title="Are you not following me yet?">
+              <span class="overlay-text">Follow Me!</span>
+            </div>
+          </a>
+          <!--Link to Linkedin-->
+          <a href="https://www.linkedin.com/in/az-dev/"> 
+            <div class="social-media-overlay">
+              <img class="social-media-logos" src="./src/svg/linkedin-logo.svg" alt="Ir al perfil de LinkedIn de Adrián" title="Are you not following me yet?">
+              <span class="overlay-text">Follow Me!</span>
+            </div>
+          </a>
+        </div>
+      </section>
+      <p class="copyright">© 2022 Copyright. All rights reserved.</p>
+    </footer>
+    <script src="./src/js/main.js" type="module"></script>
+  </body>
+</html>
