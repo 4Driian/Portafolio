@@ -40,7 +40,7 @@
   margin: 0;
 }
 
-.box-info-right p, .box-info-left  p {
+.box-info-right p, .box-info-left p {
   @include box-info-style;
   font-size: 25px;
   filter: $soft-shadow;
@@ -50,3 +50,27 @@
   font-size: 30px;
   margin-bottom: 50px;
 }
+
+@media (max-width: 480px) {
+  .box-info-right, .box-info-left {
+    flex-direction: column;
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .portfolio-content h1 {
+    margin-top: -25px;
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 769px) {
+
+}
+

@@ -27,6 +27,8 @@
   border-radius: 15px;
   color: $font-color-black;
   filter: $soft-shadow;
-  padding: 100px;
-  width: 50%;
+  padding: 40px; /* Ajusta el padding para dispositivos más pequeños */
+  width: auto; /* Ajusta el ancho para dispositivos más pequeños */
 }
+
+

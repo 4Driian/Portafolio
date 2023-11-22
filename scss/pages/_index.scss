@@ -1,4 +1,5 @@
 @import '../abstracts/variables';
+
 .content {
   margin: 0 auto;
   width: 90%;
@@ -6,15 +7,22 @@
 
 .content-info {
   display: flex;
+  flex-direction: column; 
   color: $font-color-white;
 }
 
-.content-titles h2 {
-  margin-top: -50px;
-}
+.content-titles {
+  h1, h2, p {
+    margin-top: 0;
+  }
 
-.content-titles p {
-  margin-top: -10px;
+  h2 {
+    margin-top: 10px;
+  }
+
+  p {
+    margin-top: 10px;
+  }
 }
 
 .presentation {
@@ -24,13 +32,15 @@
   margin-top: 80px;
 }
 
-
-/*Profile section*/
 .box-profile {
   margin-top: 200px;
   padding-top: 70px;
   padding-bottom: 70px;
-  background-color: #ffffff;  
+  background-color: #ffffff;
+  
+  h2 {
+    text-align: center; 
+  }
 }
 
 .about-me {
@@ -41,17 +51,24 @@
 .profile-resume {
   display: flex;
   justify-content: space-around;
+
+  p {
+    padding: 30px;
+    width: 60%;
+    text-align: justify;
+  }
 }
 
-.profile-resume p {
-  padding: 30px;
-  width: 60%;
-  text-align: justify;
+.content.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/*skills section*/
 .skills-list ul {
-  display: flex; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -60,13 +77,11 @@
 .skills-list li {
   margin-right: 20px;
   position: relative;
-}
 
-.skills-list li:hover {
-  transform: scale(1.2)  ;
-  transform: translateY(-16px);
-  transition: all 0.1s ease-out;
-
+  &:hover {
+    transform: scale(1.2) translateY(-16px);
+    transition: all 0.1s ease-out;
+  }
 }
 
 .skills-list img {
@@ -94,10 +109,13 @@
   opacity: 1; 
 }
 
-/*projects section*/
 .box-projects {
   margin-top: 150px;
   color: $font-color-white;
+
+  h2 {
+    text-align: center;
+  }
 }
 
 .recent-projects {
@@ -107,29 +125,53 @@
 .social-media {
   color: $font-color-white;
   padding-top: 20px; 
-}
 
-.social-media-links {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  padding-bottom: 50px;
-}
-
-@media (max-width: 480px) {
-  .presentation {
-    margin-top: 50px;
-    margin-bottom: -150px;
+  .social-media-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
   }
+}
 
-  .eyes-container {
+/* Mobile */
+@media (max-width: 480px) {
+  .skills-list li:hover .overlay-text-skills {
     display: none;
   }
 
-  .content-titles {
+  .skills-list li:hover {
+    transform: scale(1.2);
+    transition: all 0.1s ease-out;
+  
+  }
+
+  .skills-list img {
+    width: 50px;
+  }
+
+  .profile-resume p {
+    font-size: 20px;
+    width: 90%;
+  }
+
+  .profile-resume {
     display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .presentation {
     flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 0; 
   }
 
   .content-titles h1 {
@@ -140,16 +182,16 @@
 
   .content-titles h2 {
     font-size: 20px;
-    margin-top: -10px;
+    margin-top: -10px; 
   }
-  
+
   .content-titles p {
     margin-top: -10px;
     font-size: 18px;
   }
 
   .recent-projects-resume h2 {
-    font-size: 50px;
+    font-size: 30px;
   }
 
   .recent-projects-resume p {
@@ -167,19 +209,33 @@
   .recent-projects {
     margin-top: 30px;
     display: flex;
+    flex-direction: column; 
   }
 
   .recent-projects img {
-    margin-top: -60px;
-    padding: 20px;
+    margin-top: 0; 
+    padding: 10px;
   }
-
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+
+  .profile-resume {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .content {
+    width: 90%;
+  }
+  
   .presentation {
+    flex-direction: column;
+    align-items: center;
     margin-top: 50px;
-    margin-bottom: -150px;
+    margin-bottom: 0;
   }
 
   .eyes-container {
@@ -223,6 +279,13 @@
     justify-content: space-around;
   }
 
+  .profile-resume p {
+    padding: 30px;
+    width: 85%;
+    text-align: justify;
+  }
+
+
   .recent-projects {
     margin-top: 30px;
     display: flex;
@@ -232,9 +295,20 @@
     margin-top: -60px;
     padding: 10px;
   }
+  .box-projects, .box-profile h2 {
+    text-align: center;
+  }
+
+
 }
 
 @media (min-width: 769px) {
+
+  .content-info h1 {
+    margin-bottom: 5px;
+  }
+
+
   .recent-projects-resume {
     width: 30%;
   }
@@ -246,5 +320,14 @@
 
   .presentation {
     margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .box-projects, .box-profile h2 {
+    text-align: center;
   }
 }
+
