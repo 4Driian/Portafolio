@@ -1,11 +1,6 @@
 Personal Portfolio
 This is my personal portfolio where I showcase my projects, skills, and experience in web development.
 
-¡Important!
-* At the moment, the portfolio is still under development and currently functions well only on desktop devices. We are in the process of adding functionality for mobile devices to ensure optimal performance across different screen sizes.
-
-We appreciate your understanding and patience as we work on enhancing the portfolio's responsiveness and usability. Please check back soon for updates, and thank you for your interest in my portfolio! *
-
 Contents:
 - Description
 - Projects
@@ -15,6 +10,7 @@ You can see a live demonstration of my portfolio on the following website links:
 
 - Github Pages: https://4driian.github.io/Portafolio/
 - Vercel site: https://portafolio-seven-rust.vercel.app/
+
 Description:
 In my portfolio, I showcase my passion for web development and my experience with various technologies and programming languages. I present my notable projects completed throughout my Web Development and Design career, including descriptions, screenshots, and links to their corresponding repositories.
 

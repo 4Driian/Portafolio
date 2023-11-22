@@ -258,6 +258,18 @@
   position: relative;
 }
 
+.image-profile img {
+  width: 400px;
+}
+
+.image-profile {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  filter: drop-shadow(3px 3px 5px rgba(10, 10, 10, 0.1764705882));
+  overflow: hidden;
+}
+
 @media (max-width: 480px) {
   .logo-principal {
     margin-top: 35px;
@@ -390,11 +402,78 @@ p, a {
   margin-top: 80px;
 }
 
-.box-projects {
+/*Profile section*/
+.box-profile {
   margin-top: 200px;
   padding-top: 70px;
   padding-bottom: 70px;
+  background-color: #ffffff;
+}
+
+.about-me {
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.profile-resume {
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile-resume p {
+  padding: 30px;
+  width: 60%;
+  text-align: justify;
+}
+
+/*skills section*/
+.skills-list ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-list li {
+  margin-right: 20px;
+  position: relative;
+}
+
+.skills-list li:hover {
+  transform: scale(1.2);
+  transform: translateY(-16px);
+  transition: all 0.1s ease-out;
+}
+
+.skills-list img {
+  height: auto;
+  width: 80px;
+}
+
+.overlay-text-skills {
   background-color: #fff;
+  border-radius: 5px;
+  color: #000;
+  filter: drop-shadow(3px 3px 5px rgba(10, 10, 10, 0.1764705882));
+  font-family: "Courgette";
+  font-size: 18px;
+  left: 50%;
+  opacity: 0;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, 25px);
+  transition: opacity 0.3s ease;
+}
+
+.skills-list li:hover .overlay-text-skills {
+  opacity: 1;
+}
+
+/*projects section*/
+.box-projects {
+  margin-top: 150px;
+  color: #fff;
 }
 
 .recent-projects {
