@@ -285,6 +285,10 @@
     filter: drop-shadow(3px 3px 5px rgba(10, 10, 10, 0.1764705882));
     width: 110px;
   }
+  .social-media-cv {
+    filter: drop-shadow(3px 3px 5px rgba(10, 10, 10, 0.1764705882));
+    width: 110px;
+  }
   .project-overlay {
     display: none;
   }
@@ -309,6 +313,10 @@
     filter: drop-shadow(3px 3px 5px rgba(10, 10, 10, 0.1764705882));
     width: 110px;
   }
+  .social-media-cv {
+    filter: drop-shadow(3px 3px 5px rgba(10, 10, 10, 0.1764705882));
+    width: 110px;
+  }
   .project-overlay {
     display: none;
   }
@@ -328,6 +336,10 @@
     border-radius: 15px;
     filter: drop-shadow(3px 3px 5px rgba(10, 10, 10, 0.1764705882));
     width: 210px;
+  }
+  .social-media-cv {
+    filter: drop-shadow(3px 3px 5px rgba(10, 10, 10, 0.1764705882));
+    width: 230px;
   }
   .project-overlay {
     align-items: center;
@@ -375,7 +387,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 80px;
   filter: drop-shadow(3px 3px 5px rgba(10, 10, 10, 0.1764705882));
 }
 
@@ -482,16 +494,20 @@ p, a {
   width: 80px;
 }
 
+.skill-used {
+  width: 50px;
+}
+
 .overlay-text-skills {
   background-color: #fff;
   border-radius: 5px;
   color: #000;
   filter: drop-shadow(3px 3px 5px rgba(10, 10, 10, 0.1764705882));
   font-family: "Courgette";
-  font-size: 18px;
+  font-size: 15px;
   left: 50%;
   opacity: 0;
-  padding: 10px;
+  padding: 5px;
   position: absolute;
   top: 50%;
   transform: translate(-50%, 25px);
@@ -591,6 +607,10 @@ p, a {
   .recent-projects img {
     margin-top: 0;
     padding: 10px;
+  }
+  .box-profile {
+    margin-top: 30px;
+    padding-top: 30px;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -697,6 +717,10 @@ p, a {
   padding-top: 50px;
 }
 
+.box-info-right img {
+  margin-left: 5px;
+}
+
 .box-info-left {
   align-items: center;
   display: flex;
@@ -730,7 +754,7 @@ p, a {
   color: #000;
   filter: drop-shadow(3px 3px 5px rgba(10, 10, 10, 0.1764705882));
   padding: 40px; /* Ajusta el padding para dispositivos más pequeños */
-  width: auto; /* Ajusta el ancho para dispositivos más pequeños */
+  width: 70%; /* Ajusta el ancho para dispositivos más pequeños */
   font-size: 25px;
   filter: drop-shadow(3px 3px 5px rgba(10, 10, 10, 0.1764705882));
 }
@@ -754,79 +778,8 @@ p, a {
 }
 /*Colors*/
 /*Filters*/
-.contact-content {
-  color: #fff;
-  display: flex;
-  font-family: "Nunito", sans-serif;
-  justify-content: center;
-  padding-bottom: 70px;
-}
-
-.contact-box {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-box h2 {
-  color: #fff;
-  text-align: center;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  max-width: fit-content;
-  width: 100%;
-  margin-top: 100px;
-  margin-bottom: -100px;
-}
-
-.contact-form div {
-  margin-bottom: 50px;
-  display: flex;
-}
-
-.contact-form input:not([type=textarea]) {
-  border-radius: 10px;
-  border: none;
-  flex-grow: 1;
-  font-size: 15px;
-  height: 40px;
-  padding: 8px;
-}
-
-.form-sms textarea {
-  border-radius: 10px;
-  border: none;
-  flex-grow: 1;
-  font-size: 15px;
-  height: 40px;
-  padding: 8px;
-  min-height: 150px;
-}
-
-.button-submit-form {
-  cursor: pointer;
-  text-align: center;
-  width: 100%;
-}
-
-.overlay-text-form {
-  position: absolute;
-  bottom: -8px;
-  left: 15%;
-  transform: translateX(-50%);
-  color: #fff;
-  opacity: 0;
-  font-size: 18px;
-  pointer-events: none;
-  transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
-}
-
-.social-media-overlay:hover .overlay-text-form {
-  opacity: 1;
-  filter: drop-shadow(3px 3px 5px rgba(10, 10, 10, 0.1764705882));
-  bottom: 58px;
+.title-contact {
+  margin-top: -50px;
 }
 
 @media (max-width: 480px) {
@@ -852,7 +805,7 @@ p, a {
 .footer {
   text-align: center;
   color: #fff;
-  padding-top: 150px;
+  padding-top: 10px;
 }
 
 .social-media-description {
@@ -905,9 +858,10 @@ p, a {
     color: #000;
     background-color: #fff;
     border-radius: 0.2px;
-    padding: 7px;
+    padding: 17px;
     opacity: 0;
     font-size: 18px;
+    width: 100px;
     pointer-events: none;
     filter: drop-shadow(3px 3px 5px rgba(10, 10, 10, 0.1764705882));
     transition: opacity 0.3s ease-in-out, bottom 0.3s ease-in-out;
