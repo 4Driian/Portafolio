@@ -79,21 +79,22 @@
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-  .box-info-right, .box-info-left {
-    flex-direction: column;
-
-    p {
-      font-size: 20px;
+  
+    .box-info-right, .box-info-left {
+      flex-direction: column;
+  
+      p {
+        font-size: 20px;
+      }
     }
+  
+    .portfolio-content h1 {
+      color: $font-color-white;
+      padding-top: 10px;
+      text-align: center;
+    }
+  
   }
-
-  .portfolio-content h1 {
-    color: $font-color-white;
-    padding-top: 10px;
-    text-align: center;
-  }
-
-}
 
 @media (min-width: 769px) {
 
