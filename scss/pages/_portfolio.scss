@@ -1,4 +1,8 @@
 @import '../abstracts/variables';
+.portfolio-content {
+  padding-bottom: 150px;
+}
+
 .portfolio-content h1 {
   color: $font-color-white;
   padding-top: 50px;
@@ -40,14 +44,16 @@
   position: absolute;
 }
 
+.background--white {
+  @include box-info-style;
+}
+
 .box-description h2{
   margin: 0;
 }
 
 .box-info-right p, .box-info-left p {
-  @include box-info-style;
   font-size: 25px;
-  filter: $soft-shadow;
 }
 
 .projects-description {
@@ -68,10 +74,24 @@
     margin-top: -25px;
     font-size: 35px;
   }
+
+  
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+  .box-info-right, .box-info-left {
+    flex-direction: column;
 
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .portfolio-content h1 {
+    color: $font-color-white;
+    padding-top: 10px;
+    text-align: center;
+  }
 }
 
 @media (min-width: 769px) {
