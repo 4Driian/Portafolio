@@ -677,6 +677,10 @@ p, a {
   .box-projects, .box-profile h2 {
     text-align: center;
   }
+  .box-profile {
+    margin-top: 30px;
+    padding-top: 30px;
+  }
 }
 @media (min-width: 769px) {
   .content-info h1 {
