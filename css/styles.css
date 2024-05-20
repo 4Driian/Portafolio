@@ -200,6 +200,21 @@
   color: #000;
 }
 
+.direct-mail {
+  color: #fff;
+  font-size: 36px;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #2a6f97;
+}
+
+.direct-mail:hover {
+  transition: all 0.3s;
+  background-color: #fff;
+  color: #000;
+}
+
 @media (max-width: 480px) {
   .nav-principal {
     display: none;
